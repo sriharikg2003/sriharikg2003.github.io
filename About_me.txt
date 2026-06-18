@@ -1,0 +1,13 @@
+Linked in : https://www.linkedin.com/in/srihari-k-g-91931a1ab/
+
+
+My github : https://github.com/sriharikg2003/
+
+I am basically into AI ML Computer vision 
+
+  To add a real event later: append one object to the gallery array in js/data.js with event, date, caption, and a photos list, and drop the images into assets/img/gallery/ — no HTML
+  changes needed.
+
+claude --resume c5a7d9bc-adae-4711-b003-c69112a99095
+python3 -m http.server 8000
+

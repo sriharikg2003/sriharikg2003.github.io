@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Placeholder event photo">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c2733"/><stop offset="1" stop-color="#0d1520"/></linearGradient></defs>
+<rect width="800" height="600" fill="url(#g)"/>
+<g fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+<rect x="320" y="245" width="160" height="120" rx="16"/>
+<circle cx="400" cy="305" r="34"/>
+<path d="M355 245 l18 -24 h54 l18 24"/>
+</g>
+<text x="400" y="430" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24" fill="rgba(255,255,255,0.4)">Replace with event photo</text>
+</svg>

@@ -1,0 +1,1 @@
+Presenting our work on efficient 3D Gaussian scene representations.
