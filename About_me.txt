@@ -11,3 +11,8 @@ I am basically into AI ML Computer vision
 claude --resume c5a7d9bc-adae-4711-b003-c69112a99095
 python3 -m http.server 8000
 
+
+
+git add .
+git commit -m "update"
+git push

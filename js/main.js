@@ -48,7 +48,7 @@
   });
 
   /* active link highlighting while scrolling */
-  const sections = ['about', 'experience', 'publications', 'contact'];
+  const sections = ['news', 'experience', 'publications', 'contact'];
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
@@ -58,32 +58,40 @@
   }, { rootMargin: '-40% 0px -55% 0px' });
   sections.forEach((id) => { const el = document.getElementById(id); if (el) sectionObserver.observe(el); });
 
-  /* ==================== TYPED TAGLINE ==================== */
-  // (hero exists only on the main page)
+  /* ==================== TYPEWRITER TAGLINE ==================== */
+  // Types the single hero tagline once, then a blinking caret remains.
   const typedEl = $('#typed');
-  const phrases = SITE_DATA.taglines;
-
-  if (!typedEl) {
-    /* not on this page */
-  } else if (prefersReducedMotion) {
-    typedEl.textContent = phrases[0]; // no animation: show first phrase
-  } else {
-    let pi = 0, ci = 0, deleting = false;
-    (function tick() {
-      const phrase = phrases[pi];
-      ci += deleting ? -1 : 1;
-      typedEl.textContent = phrase.slice(0, ci);
-
-      let delay = deleting ? 38 : 75;
-      if (!deleting && ci === phrase.length) { delay = 1800; deleting = true; }
-      else if (deleting && ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; delay = 350; }
-      setTimeout(tick, delay);
-    })();
+  if (typedEl) {
+    const phrase = SITE_DATA.tagline || '';
+    if (prefersReducedMotion) {
+      typedEl.textContent = phrase;
+    } else {
+      let ci = 0;
+      (function tick() {
+        ci += 1;
+        typedEl.textContent = phrase.slice(0, ci);
+        if (ci < phrase.length) setTimeout(tick, 70);
+      })();
+    }
   }
 
   /* ==================== RENDER: ABOUT ==================== */
   if ($('#bio')) {
     $('#bio').innerHTML = SITE_DATA.bio;
+  }
+
+  /* ==================== RENDER: NEWS ==================== */
+  const newsList = $('#news-list');
+  if (newsList) {
+    newsList.innerHTML = (SITE_DATA.news || [])
+      .map(
+        (n) => `
+      <li class="news__item reveal">
+        <span class="news__date">[${n.date}]</span>
+        <span class="news__text">${n.text}</span>
+      </li>`,
+      )
+      .join('');
   }
 
   /* ==================== RENDER: PUBLICATIONS ==================== */
@@ -130,7 +138,7 @@
             <div class="pub__body">
               <h4 class="pub__title">${p.title}</h4>
               <p class="pub__authors">${renderAuthors(p.authors)}</p>
-              <p class="pub__venue">${p.venue}${p.venueNote ? ` · <span class="pub__badge">${p.venueNote}</span>` : ''}</p>
+              <p class="pub__venue"><span class="pub__badge">${p.venue}</span></p>
               ${renderLinks(p.links)}
             </div>
           </article>`,

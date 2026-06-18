@@ -57,7 +57,7 @@
       </button>
 
       <ul class="nav__menu" id="nav-menu">
-        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#news" class="nav__link">News</a></li>
         <li><a href="#experience" class="nav__link">Experience</a></li>
         <li><a href="#publications" class="nav__link">Publications</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
@@ -91,7 +91,10 @@
           <span id="typed" aria-live="polite"></span><span class="caret" aria-hidden="true"></span>
         </p>
         <p class="hero__sub reveal">
-          Graduate researcher working on computer vision, 3D scene representation and explainable deep learning.
+          I'm a final-year Master's student at <strong>IISc Bangalore</strong>, advised by
+          <strong>Prof. Venkatesh Babu</strong> at the
+          <a href="https://val.cds.iisc.ac.in/" target="_blank" rel="noopener">Vision and AI Lab (VAL)</a>.
+          I obtained my B.Tech in Computer Science from <strong>IIT Dharwad</strong>.
         </p>
         <ul class="hero__affil reveal" aria-label="Affiliations">
           <li>
@@ -126,20 +129,14 @@
         </figure>
       </div>
 
-      <a class="scroll-hint" href="#about" aria-label="Scroll to About section">
-        <span class="scroll-hint__mouse" aria-hidden="true"></span>
-      </a>
     </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section class="section about" id="about" aria-labelledby="about-title">
+    <!-- ============ RECENT NEWS ============ -->
+    <section class="section news" id="news" aria-labelledby="news-title">
       <div class="container">
-        <h2 class="section__title reveal" id="about-title"><span class="section__num">01.</span> About</h2>
-
-        <div class="about__bio reveal">
-          <!-- Bio is rendered from data.js -->
-          <div id="bio"></div>
-        </div>
+        <h2 class="section__title reveal" id="news-title"><span class="section__num">01.</span> Recent News</h2>
+        <!-- News rendered from data.js -->
+        <ul class="news-list" id="news-list"></ul>
       </div>
     </section>
 
@@ -157,6 +154,7 @@
     <section class="section experience" id="experience" aria-labelledby="experience-title">
       <div class="container">
         <h2 class="section__title reveal" id="experience-title"><span class="section__num">02.</span> Experience &amp; Education</h2>
+        <!-- (numbering: News 01 · Experience 02 · Publications 03 · Contact 04) -->
         <!-- Timeline rendered from data.js -->
         <ol class="timeline" id="timeline"></ol>
       </div>
@@ -216,7 +214,7 @@
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year"></span> Srihari K G · Built with vanilla HTML/CSS/JS</p>
+      <p>© <span id="year"></span> Srihari K G </p>
       <ul class="footer__links">
         <li><a href="https://github.com/sriharikg2003/" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/srihari-k-g-91931a1ab/" target="_blank" rel="noopener">LinkedIn</a></li>

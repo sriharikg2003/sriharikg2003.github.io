@@ -6,20 +6,24 @@
 
 const SITE_DATA = {
 
-  /* ---------- Typed tagline phrases (hero) ---------- */
-  taglines: [
-    'AI & Machine Learning',
-    'Computer Vision Research',
-    '3D Gaussian Splatting',
-    'Explainable AI',
-    'Deep Learning',
+  /* ---------- Hero tagline (typewriter effect) ---------- */
+  tagline: 'Computer Vision · Machine Learning',
+
+  /* ---------- Recent news (top = most recent) ----------
+     date: short label shown in brackets, e.g. 'Jun 26' (month + 2-digit year).
+     text: HTML allowed (use <strong> for venues, <a> for links).        */
+  news: [
+    {
+      date: 'Jun 18, 2026',
+      text: 'Our paper <strong>AdaptiveSplat</strong> was accepted at <strong>ECCV 2026</strong>! 💐',
+    },
   ],
 
   /* ---------- About bio (HTML allowed) ---------- */
   bio: `
     <p>I'm an <strong>M.Tech Artificial Intelligence</strong> student at the
     <strong>Indian Institute of Science (IISc), Bengaluru</strong>, with a
-    B.Tech in Computer Science from <strong>IIT Dharwad</strong> (CGPA 9.61).</p>
+    B.Tech in Computer Science from <strong>IIT Dharwad</strong>.</p>
     <p>My work sits at the intersection of <strong>computer vision</strong> and
     <strong>interpretable deep learning</strong> — from refining Class Activation
     Maps with SVD, to pruning 3D Gaussian scene representations for real-time
@@ -57,7 +61,6 @@ const SITE_DATA = {
       title: 'AdaptiveSplat: Texture Aware Controllable 3D Gaussian Allocation for Feed-Forward Reconstruction',
       authors: ['Badrinath Singhal', 'Srihari K G', 'Sreehari Iyer', 'Ankit Dhiman', 'Venkatesh Babu Radhakrishnan'],
       venue: 'ECCV 2026',
-      venueNote: 'Accepted',
       year: '2026',
       image: 'assets/img/pub-adaptivesplat.jpeg',
       links: {}, // project / paper / code — coming soon
@@ -176,7 +179,7 @@ const SITE_DATA = {
       period: '2025 — 2027',
       title: 'M.Tech, Artificial Intelligence',
       org: 'Indian Institute of Science, Bengaluru',
-      points: ['CGPA 8.7 · Research focus on computer vision and 3D scene representation.'],
+      points: ['Research focus on computer vision and 3D scene representation.'],
       type: 'education',
     },
     {
@@ -215,7 +218,7 @@ const SITE_DATA = {
       period: '2021 — 2025',
       title: 'B.Tech, Computer Science & Engineering',
       org: 'Indian Institute of Technology Dharwad',
-      points: ['CGPA 9.61 · Coursework spanning AI, OS, DSA, computer architecture and scientific computing.'],
+      points: ['Coursework spanning AI, OS, DSA, computer architecture and scientific computing.'],
       type: 'education',
     },
   ],
