@@ -414,43 +414,6 @@
 
   $$('.reveal').forEach((el) => revealObserver.observe(el));
 
-  /* ==================== CONTACT FORM ==================== */
-  // Works with Formspree once YOUR_FORM_ID is set in index.html.
-  // Until then, falls back to opening a pre-filled mailto draft.
-  const form = $('#contact-form');
-  const status = $('#form-status');
-
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const data = new FormData(form);
-
-    if (form.action.includes('YOUR_FORM_ID')) {
-      // Formspree not configured yet → mailto fallback
-      const subject = encodeURIComponent(`Portfolio contact from ${data.get('name')}`);
-      const body = encodeURIComponent(`${data.get('message')}\n\n— ${data.get('name')} (${data.get('email')})`);
-      location.href = `mailto:sriharikg2003@gmail.com?subject=${subject}&body=${body}`;
-      status.textContent = 'Opening your email client…';
-      return;
-    }
-
-    status.textContent = 'Sending…';
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
-      });
-      if (res.ok) {
-        form.reset();
-        status.textContent = "Thanks! I'll get back to you soon. ✓";
-      } else {
-        throw new Error('Request failed');
-      }
-    } catch {
-      status.textContent = 'Something went wrong — please email me directly.';
-    }
-  });
-
   /* ==================== MISC ==================== */
   $('#year').textContent = new Date().getFullYear();
 })();
