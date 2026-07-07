@@ -63,7 +63,7 @@ const SITE_DATA = {
       venue: 'ECCV 2026',
       year: '2026',
       image: 'assets/img/pub-adaptivesplat.jpeg',
-      links: { project: 'https://badrinaths.github.io/projects/adaptive-splat/' }, // paper / code — coming soon
+      links: { project: 'https://badrinaths.github.io/projects/adaptive-splat/'  , paper : 'https://arxiv.org/abs/2607.04256'}, // paper / code — coming soon
     },
   ],
 
