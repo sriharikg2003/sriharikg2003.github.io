@@ -415,5 +415,6 @@
   $$('.reveal').forEach((el) => revealObserver.observe(el));
 
   /* ==================== MISC ==================== */
-  $('#year').textContent = new Date().getFullYear();
+  const yearEl = $('#year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();
