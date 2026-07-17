@@ -48,7 +48,7 @@
   });
 
   /* active link highlighting while scrolling */
-  const sections = ['news', 'experience', 'publications', 'gallery', 'contact'];
+  const sections = ['news', 'experience', 'publications', 'contact'];
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
