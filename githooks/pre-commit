@@ -1,0 +1,5 @@
+#!/bin/sh
+# Auto-regenerate the gallery manifest from assets/gallery/ folders,
+# then stage it — so adding/renaming an event folder needs no manual step.
+python3 scripts/build_gallery.py >/dev/null 2>&1 || python scripts/build_gallery.py >/dev/null 2>&1
+git add js/gallery.js

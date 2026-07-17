@@ -2,17 +2,17 @@
    Add event folders under assets/gallery/ instead. */
 const GALLERY_DATA = [
   {
-    "event": "IIT Convocation",
+    "event": "B.Tech Convocation",
     "caption": "",
     "photos": [
-      "assets/gallery/01 IIT Convocation/CS_batch.jpeg",
-      "assets/gallery/01 IIT Convocation/Director.jpeg",
-      "assets/gallery/01 IIT Convocation/Friend_0.jpeg",
-      "assets/gallery/01 IIT Convocation/Friends_1.jpeg",
-      "assets/gallery/01 IIT Convocation/Friends_2.jpeg",
-      "assets/gallery/01 IIT Convocation/Full_batch.jpeg",
-      "assets/gallery/01 IIT Convocation/gang_1.jpeg",
-      "assets/gallery/01 IIT Convocation/throw.jpeg"
+      "assets/gallery/01 B.Tech Convocation/CS_batch.jpeg",
+      "assets/gallery/01 B.Tech Convocation/Friends_0.jpeg",
+      "assets/gallery/01 B.Tech Convocation/Friends_1.jpeg",
+      "assets/gallery/01 B.Tech Convocation/Friends_2.jpeg",
+      "assets/gallery/01 B.Tech Convocation/Friends_3.jpeg",
+      "assets/gallery/01 B.Tech Convocation/Full_batch.jpeg",
+      "assets/gallery/01 B.Tech Convocation/Gang_1.jpeg",
+      "assets/gallery/01 B.Tech Convocation/throw.jpeg"
     ]
   }
 ];
