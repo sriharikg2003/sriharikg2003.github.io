@@ -417,4 +417,15 @@
   /* ==================== MISC ==================== */
   const yearEl = $('#year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ==================== VISIT COUNTER ==================== */
+  // Free, no-signup hit counter (Abacus). Counts page loads; stays hidden if the
+  // service is unreachable, so it never breaks the layout.
+  const visitEl = $('#visit-count');
+  if (visitEl) {
+    fetch('https://abacus.jasoncameron.dev/hit/sriharikg-portfolio/visits')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => { if (d && typeof d.value === 'number') visitEl.textContent = d.value.toLocaleString(); })
+      .catch(() => {});
+  }
 })();

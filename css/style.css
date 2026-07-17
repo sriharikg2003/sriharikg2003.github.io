@@ -651,6 +651,12 @@ a.pub__btn:hover { border-color: var(--accent); color: var(--accent); }
 .gallery-empty { color: var(--text-muted); }
 
 /* ---------- 12. Footer ---------- */
+.visit-count {
+  font-size: .6rem; color: var(--text-muted); opacity: .3;
+  letter-spacing: .04em; font-variant-numeric: tabular-nums;
+  user-select: none;
+}
+.visit-count:empty { display: none; }
 .footer { border-top: 1px solid var(--border); padding-block: 1.6rem; }
 .footer__inner {
   display: flex; flex-wrap: wrap; gap: 1rem;
