@@ -644,31 +644,6 @@ a.pub__btn:hover { border-color: var(--accent); color: var(--accent); }
 
 .gallery-empty { color: var(--text-muted); }
 
-/* ---------- 11. Contact ---------- */
-.contact__text { max-width: 640px; }
-.contact__lead {
-  font-size: var(--fs-lg); color: var(--text-muted);
-  margin-top: 0; margin-bottom: 1.6rem;
-}
-
-.contact__links {
-  display: flex; flex-wrap: wrap; gap: .7rem;
-}
-.contact__item {
-  display: inline-flex; align-items: center; gap: .55rem;
-  padding: .55rem .95rem;
-  border: 1px solid var(--border); border-radius: 8px;
-  color: var(--text); font-weight: 500; font-size: .95rem;
-  transition: border-color .2s var(--ease), color .2s var(--ease), background-color .2s var(--ease);
-}
-.contact__item svg { color: var(--text-muted); transition: color .2s var(--ease); }
-.contact__item:hover {
-  border-color: var(--accent); color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 8%, transparent);
-}
-.contact__item:hover svg { color: var(--accent); }
-
-
 /* ---------- 12. Footer ---------- */
 .footer { border-top: 1px solid var(--border); padding-block: 1.6rem; }
 .footer__inner {
