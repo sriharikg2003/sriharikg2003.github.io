@@ -2,39 +2,17 @@
    Add event folders under assets/gallery/ instead. */
 const GALLERY_DATA = [
   {
-    "event": "Research Symposium - IISc Bengaluru",
-    "caption": "Presenting our work on efficient 3D Gaussian scene representations.",
+    "event": "IIT Convocation",
+    "caption": "",
     "photos": [
-      "assets/gallery/01 Research Symposium - IISc Bengaluru/symposium-1.svg",
-      "assets/gallery/01 Research Symposium - IISc Bengaluru/symposium-2.svg",
-      "assets/gallery/01 Research Symposium - IISc Bengaluru/symposium-3.svg",
-      "assets/gallery/01 Research Symposium - IISc Bengaluru/symposium-4.svg"
-    ]
-  },
-  {
-    "event": "Parsec 3.0 - ML Contest",
-    "caption": "Competing in the Moisture Minds machine-learning challenge at IIT Dharwad.",
-    "photos": [
-      "assets/gallery/02 Parsec 3.0 - ML Contest/contest-1.svg",
-      "assets/gallery/02 Parsec 3.0 - ML Contest/contest-2.svg",
-      "assets/gallery/02 Parsec 3.0 - ML Contest/contest-3.svg"
-    ]
-  },
-  {
-    "event": "Campus and Community",
-    "caption": "Moments from IIT Dharwad.",
-    "photos": [
-      "assets/gallery/03 Campus and Community/WhatsApp Image 2025-07-24 at 00.25.56 (1).jpeg",
-      "assets/gallery/03 Campus and Community/campus-1.jpeg",
-      "assets/gallery/03 Campus and Community/f3.jpeg",
-      "assets/gallery/03 Campus and Community/fa.jpeg"
-    ]
-  },
-  {
-    "event": "Misc",
-    "caption": "Moments from Convocation.",
-    "photos": [
-      "assets/gallery/04 Misc/WhatsApp Image 2025-07-24 at 00.25.39.jpeg"
+      "assets/gallery/01 IIT Convocation/CS_batch.jpeg",
+      "assets/gallery/01 IIT Convocation/Director.jpeg",
+      "assets/gallery/01 IIT Convocation/Friend_0.jpeg",
+      "assets/gallery/01 IIT Convocation/Friends_1.jpeg",
+      "assets/gallery/01 IIT Convocation/Friends_2.jpeg",
+      "assets/gallery/01 IIT Convocation/Full_batch.jpeg",
+      "assets/gallery/01 IIT Convocation/gang_1.jpeg",
+      "assets/gallery/01 IIT Convocation/throw.jpeg"
     ]
   }
 ];
