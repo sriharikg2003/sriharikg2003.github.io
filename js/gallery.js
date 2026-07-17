@@ -5,7 +5,6 @@ const GALLERY_DATA = [
     "event": "B.Tech Convocation",
     "caption": "",
     "photos": [
-      "assets/gallery/01 B.Tech Convocation/CS_batch.jpeg",
       "assets/gallery/01 B.Tech Convocation/Friends_0.jpeg",
       "assets/gallery/01 B.Tech Convocation/Friends_2.jpeg",
       "assets/gallery/01 B.Tech Convocation/Friends_3.jpeg",
