@@ -291,7 +291,13 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; margin: 0 0 .6
   display: flex; flex-wrap: wrap; gap: 1rem 2.2rem;
   margin-top: 1.4rem;
 }
-.hero__affil li { display: flex; align-items: center; gap: .75rem; }
+.hero__affil li { display: flex; }
+.hero__affil li > a {
+  display: flex; align-items: center; gap: .75rem;
+  color: inherit; border-radius: 10px; transition: opacity .2s var(--ease);
+}
+.hero__affil li > a:hover { opacity: .8; }
+.hero__affil li > a:hover strong { color: var(--accent); }
 .hero__affil img {
   width: 44px; height: auto;
   background: #fff; /* emblems stay legible on dark backgrounds */
